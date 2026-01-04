@@ -1,0 +1,177 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(27, 67, 50, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xs);
+}
+
+.modal {
+    background-color: var(--color-surface);
+    width: 100%;
+    max-width: 800px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-medium);
+    animation: modalIn 0.3s ease-out;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    top: var(--space-xs);
+    right: var(--space-xs);
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: var(--transition-fast);
+}
+
+.closeBtn:hover {
+    background-color: var(--color-bg);
+    transform: rotate(90deg);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+}
+
+.imageArea {
+    background-color: var(--color-bg);
+    padding: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-primary);
+}
+
+@media (min-width: 768px) {
+    .imageArea {
+        width: 300px;
+    }
+}
+
+.infoArea {
+    padding: var(--space-md);
+    flex: 1;
+}
+
+.title {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2xs);
+}
+
+.shortDesc {
+    color: var(--brand-secondary);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.fullDesc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
+}
+
+.benefitsTitle {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.benefitsList {
+    list-style: none;
+    margin-bottom: var(--space-md);
+}
+
+.benefitItem {
+    font-size: var(--text-sm);
+    display: flex;
+    gap: var(--space-2xs);
+    margin-bottom: 8px;
+    color: var(--color-text-main);
+}
+
+.actions {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+@media (min-width: 640px) {
+    .actions {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.whatsappBtn {
+    background-color: #25D366;
+    color: white;
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xs);
+    transition: var(--transition-normal);
+}
+
+.whatsappBtn:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.callBtn {
+    border: 1px solid var(--brand-primary);
+    color: var(--brand-primary);
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xs);
+    transition: var(--transition-normal);
+}
+
+.callBtn:hover {
+    background-color: var(--brand-primary);
+    color: white;
+    transform: translateY(-text);
+}

@@ -1,0 +1,76 @@
+.section {
+    background-color: var(--color-bg);
+    padding: var(--space-lg) 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-md);
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    gap: var(--space-sm);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: var(--color-surface);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    display: flex;
+    gap: var(--space-xs);
+    align-items: flex-start;
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+    border-color: var(--brand-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.iconWrapper {
+    background-color: var(--brand-accent);
+    color: var(--brand-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tipText {
+    font-size: var(--text-base);
+    color: var(--color-text-main);
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+}
+
+.badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    color: var(--brand-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-2xs);
+}

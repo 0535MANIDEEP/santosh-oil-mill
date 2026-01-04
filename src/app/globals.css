@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Core Palette - Natural & Professional */
+  --brand-primary: #1B4332;
+  /* Deep Forest Green - Trust/Nature */
+  --brand-secondary: #2D6A4F;
+  /* Medium Green */
+  --brand-accent: #D4A373;
+  /* Warm Oil Gold */
+  --brand-accent-hover: #bc8a5f;
+
+  /* Neutral Palette */
+  --color-bg: #FCF9F2;
+  /* Soft Cream */
+  --color-surface: #FFFFFF;
+  --color-text-main: #1A1A1A;
+  /* Soft Black */
+  --color-text-muted: #4A4A4A;
+  /* Dark Grey */
+  --color-text-on-dark: #F8F9FA;
+  --color-border: #E5E5E5;
+
+  /* Typography Scale - Modular 1.25 ratio */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Outfit', sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-md: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-lg: clamp(1.75rem, 1.5rem + 1vw, 2.5rem);
+  --text-xl: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --text-display: clamp(3rem, 2.5rem + 4vw, 6rem);
+
+  /* Spacing Scale - 8px base */
+  --space-unit: 8px;
+  --space-2xs: calc(var(--space-unit) * 1);
+  /* 8px */
+  --space-xs: calc(var(--space-unit) * 2);
+  /* 16px */
+  --space-sm: calc(var(--space-unit) * 4);
+  /* 32px */
+  --space-md: calc(var(--space-unit) * 8);
+  /* 64px */
+  --space-lg: calc(var(--space-unit) * 12);
+  /* 96px */
+  --space-xl: calc(var(--space-unit) * 20);
+  /* 160px */
+
+  /* Surface Tokens */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Reset & Accessibility */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* Base Element Styles */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--brand-primary);
+}
+
+p {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-xs);
+  max-width: 65ch;
+  /* Limiting line length for readability */
+}
+
+/* Layout Utilities */
+.l-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .l-container {
+    padding: 0 var(--space-sm);
+  }
+}
+
+.l-section {
+  padding: var(--space-md) 0;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .l-section {
+    padding: var(--space-lg) 0;
+  }
+}
+
+.l-grid {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .l-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.l-flex {
+  display: flex;
+  gap: var(--space-2xs);
+  align-items: center;
+}
+
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,128 @@
+.footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0 var(--space-sm);
+    color: var(--color-text-main);
+}
+
+.grid {
+    display: grid;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: var(--text-md);
+    color: var(--brand-primary);
+    margin-bottom: var(--space-2xs);
+}
+
+.label {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-secondary);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-2xs);
+    display: block;
+}
+
+.text {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.link {
+    font-size: var(--text-sm);
+    color: var(--color-text-main);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    transition: var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--brand-primary);
+}
+
+.address {
+    font-style: normal;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.socials {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-xs);
+}
+
+.socialLink {
+    color: var(--brand-primary);
+    opacity: 0.7;
+    transition: var(--transition-fast);
+}
+
+.socialLink:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.badge {
+    background-color: var(--color-bg);
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+.quote {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    font-style: italic;
+    color: var(--brand-primary);
+    margin: 0;
+}
+
+.bottomBar {
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .bottomBar {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.legal {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+.fssai {
+    font-size: var(--text-xs);
+    color: var(--brand-secondary);
+    font-weight: 600;
+}
