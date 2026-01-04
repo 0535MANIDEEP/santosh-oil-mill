@@ -38,6 +38,14 @@ A premium, interactive web experience built for **Santhosh Oil Mill, Shankarpall
 3.  **Deploying to Production:**
     Recommended: [Deploy on Vercel](https://vercel.com/new) for best performance and easy custom domain setup.
 
+Deployment
+This project is optimized for deployment on Vercel.
+
+Push code to GitHub.
+Import project into Vercel.
+Deploy.
+Live URL: [https://santosh-oil-mill-shankarpally.vercel.app/]
+
 ## 📁 Project Structure
 
 *   `/src/app/page.tsx` - Main layout and marketing flow.
