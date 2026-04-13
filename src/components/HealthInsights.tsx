@@ -12,7 +12,7 @@ const HealthInsights = () => {
             <div className="l-container">
                 <div className={styles.header}>
                     <span className={styles.badge}>Health First</span>
-                    <h2 style={{ fontSize: 'var(--text-lg)' }}>Why Wood-Pressed Oils Matter</h2>
+                    <h2 style={{ fontSize: 'var(--text-lg)' }}>Why Cold-Pressed Oils Matter</h2>
                     <p>
                         Our traditional extraction methods don't just produce oil—they preserve life-giving nutrients
                         that modern processing destroys.
