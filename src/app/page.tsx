@@ -36,7 +36,7 @@ export default function Home() {
             <span className="section-tag" style={{ color: "var(--brand-secondary)", fontSize: "var(--text-xs)", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: 700 }}>Why Santhosh Oil Mill?</span>
             <h2 style={{ fontSize: "var(--text-lg)" }}>Legacy of Purity</h2>
             <p className="text-muted leading-relaxed">
-              We believe that good health starts in the kitchen. Our wood-pressed oils are
+              We believe that good health starts in the kitchen. Our cold-pressed oils are
               extracted without heat or chemicals, preserving nature's original essence.
             </p>
           </div>
