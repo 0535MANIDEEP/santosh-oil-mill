@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Santhosh Oil Mill | Pure Cold Pressed Oils Shankarpally",
-  description: "Traditional wood-pressed oils for healthy families. Chemical-free, 100% natural, and freshly extracted in Shankarpally.",
+  description: "Cold-pressed oils for healthy families. Chemical-free, 100% natural, and freshly extracted in Shankarpally.",
   keywords: ["Cold pressed oil", "Shankarpally", "healthy cooking oil", "traditional oil mill", "chemical free oil"],
 };
 
