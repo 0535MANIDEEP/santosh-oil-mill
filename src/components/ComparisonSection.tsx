@@ -7,7 +7,7 @@ const ComparisonSection = () => {
     const comparisonData = [
         {
             feature: "Processing",
-            coldPressed: "Extracted at room temperature using traditional wood/stone press.",
+            coldPressed: "Extracted at room temperature using traditional cold/stone press.",
             refined: "Extracted using high heat (>200°C) and chemical solvents like Hexane."
         },
         {
@@ -35,7 +35,7 @@ const ComparisonSection = () => {
                     <h2 style={{ fontSize: 'var(--text-lg)' }}>Cold Pressed vs Refined Oils</h2>
                     <p>
                         Understanding how your oil is extracted is key to your family's health.
-                        Wood-pressing is a slow, natural process that preserves what nature intended.
+                        Cold-pressing is a slow, natural process that preserves what nature intended.
                     </p>
                 </div>
 
