@@ -10,7 +10,7 @@ const Hero = () => {
             <div className={styles.bgOverlay}>
                 <img
                     src="/hero-bg.png"
-                    alt="Natural Wood-Pressed Oil Extraction"
+                    alt="Natural Cold-Pressed Oil Extraction"
                     className={styles.bgImage}
                 />
                 <div className={styles.gradient} />
@@ -26,7 +26,7 @@ const Hero = () => {
                     </h1>
                     <p className={styles.description}>
                         Experience the natural taste and health benefits of cold-pressed oils.
-                        Extracted using ancient wood-pressing methods with zero heat and no chemicals.
+                        Extracted using cold-pressing methods with no chemicals.
                     </p>
 
                     <div className={styles.actions}>
