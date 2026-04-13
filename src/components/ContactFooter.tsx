@@ -15,7 +15,7 @@ const ContactFooter = () => {
                     <div className={styles.column}>
                         <h3 className={styles.title}>{BUSINESS_INFO.name}</h3>
                         <p className={styles.text}>
-                            Authentic wood-pressed oils maintained by Sridhar.
+                            Authentic cold-pressed oils maintained by Sridhar.
                             Preserving nature's nutritional signature for your family.
                         </p>
                     </div>
