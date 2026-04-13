@@ -17,7 +17,7 @@ const StoreLocator = () => {
                         <h2 className={styles.title}>Come See the Purity</h2>
                         <p className={styles.text}>
                             We welcome you to visit our mill in Shankarpally. Watch Sridhar maintain
-                            the traditional wood-pressing process live and experience the pure aroma
+                            the traditional cold-pressing process live and experience the pure aroma
                             of freshly extracted oils.
                         </p>
 
